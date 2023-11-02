@@ -10,7 +10,6 @@ RSpec.describe Comment, type: :model do
     it 'is valid with the existing user and post' do
       expect(Comment.new(user: @user, post: @post)).to be_valid
     end
-
     it 'is not valid without the post' do
       expect(Comment.new(user: @user)).to_not be_valid
     end
