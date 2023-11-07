@@ -57,15 +57,6 @@ A Ruby blog app is a web application that allows users to create, edit, and publ
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-## 🚀 Live Demo <a name="live-demo"></a>
-
-The Live Demo of this Capstone Project is available now on YouTube.
-
-- N/A
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
