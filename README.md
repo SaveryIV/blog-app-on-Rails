@@ -49,20 +49,9 @@ A Ruby blog app is a web application that allows users to create, edit, and publ
 
 > The key features of this project includes.
 
-- **Ability to catalog any type of item**
-- **Ability to add photos of items**
-- **Ability to view and edit item details**
-- **Ability to track item status**
-- **Ability to generate reports**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-## 🚀 Live Demo <a name="live-demo"></a>
-
-The Live Demo of this Capstone Project is available now on YouTube.
-
-- N/A
+- **Ability to add new users**
+- **Ability to add new posts**
+- **Ability to view and edit user info**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +78,7 @@ In order to run this project you need:
 Clone this repository to your desired folder by using this 👇️ command :
 
 ```
-git clone https://github.com/jecode93/catalog-of-my-things-capstone.git
+git clone https://github.com/SaveryIV/blog-app-on-Rails.git
 ```
 
 ### Install
@@ -97,7 +86,7 @@ git clone https://github.com/jecode93/catalog-of-my-things-capstone.git
 Go to the project directory:
 
 ```
-cd catalog-of-my-things-capstone
+cd prject-name
 ```
 
 Before to run the program, verify that you have Ruby installed on your OS running the following command:
@@ -143,8 +132,6 @@ rspec
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Here are some future features that could be added to the Catalog of My Things in the future.
 
 - **Artificial intelligence (AI) powered features:** AI could be used to help users automatically identify and catalog items, as well as to provide recommendations for new items to add to their collection.
 
