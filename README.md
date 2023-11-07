@@ -78,7 +78,7 @@ In order to run this project you need:
 Clone this repository to your desired folder by using this 👇️ command :
 
 ```
-git clone https://github.com/jecode93/catalog-of-my-things-capstone.git
+git clone https://github.com/SaveryIV/blog-app-on-Rails.git
 ```
 
 ### Install
@@ -86,7 +86,7 @@ git clone https://github.com/jecode93/catalog-of-my-things-capstone.git
 Go to the project directory:
 
 ```
-cd catalog-of-my-things-capstone
+cd prject-name
 ```
 
 Before to run the program, verify that you have Ruby installed on your OS running the following command:
@@ -132,8 +132,6 @@ rspec
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Here are some future features that could be added to the Catalog of My Things in the future.
 
 - **Artificial intelligence (AI) powered features:** AI could be used to help users automatically identify and catalog items, as well as to provide recommendations for new items to add to their collection.
 
