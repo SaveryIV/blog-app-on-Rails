@@ -49,11 +49,9 @@ A Ruby blog app is a web application that allows users to create, edit, and publ
 
 > The key features of this project includes.
 
-- **Ability to catalog any type of item**
-- **Ability to add photos of items**
-- **Ability to view and edit item details**
-- **Ability to track item status**
-- **Ability to generate reports**
+- **Ability to add new users**
+- **Ability to add new posts**
+- **Ability to view and edit user info**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
