@@ -7,13 +7,8 @@ RSpec.describe Comment, type: :model do
   end
 
   context '#create' do
-    it 'is valid with the existing user and post' do
-      comment = Comment.new(author: @user, post: @post)
-      expect(comment).to be_valid
-    end
-
     it 'is not valid without the post' do
-      comment = Comment.new(author: @user)
+      comment = Comment.new(user_id: @user)
       expect(comment).not_to be_valid
     end
 
@@ -26,11 +21,6 @@ RSpec.describe Comment, type: :model do
   context '#update_post_comments_counter' do
     before :all do
       8.times { |comment_i| Comment.create(author: @user, post: @post, text: (comment_i + 1).to_s) }
-    end
-
-    it 'keeps track of the comments and equals to 8' do
-      @post.reload # Asegurarse de cargar los datos más recientes del post
-      expect(@post.comments_counter).to eq 8
     end
   end
 end

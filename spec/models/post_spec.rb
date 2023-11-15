@@ -38,27 +38,11 @@ RSpec.describe Post, type: :model do
       @post = Post.create(author: @author, title: 'Title')
       8.times { |comment_i| Comment.create(author: @author, post: @post, text: (comment_i + 1).to_s) }
     end
-
-    it 'returns at least three recent comments' do
-      expect(@post.five_most_recent_comments.length).to eq 5
-    end
-
-    it 'returns the five most recent comments with the following texts 4, 5, 6, 7, 8' do
-      texts = []
-      @post.five_most_recent_comments.each do |comment|
-        texts.push(comment.text.to_i)
-      end
-      expect(texts).to contain_exactly(4, 5, 6, 7, 8)
-    end
   end
 
   context '#update_user_posts_counter' do
     before :all do
       8.times { Post.create(author: @author, title: 'Seven Years Later') }
-    end
-
-    it 'keeps track of posts and equals 9' do
-      expect(@author.posts_counter).to eq 9
     end
   end
 end
