@@ -40,5 +40,20 @@ RSpec.describe 'User View', type: :feature do
       expect(page).to have_content(post[:title])
     end
   end
-  
+  it 'I can see a button that lets me view all of a user\'s posts' do
+    visit user_path(@user)
+    expect(page).to have_css('.btn-primary')
+  end
+  it 'When I click a user\'s post, it redirects me to that post\'s show page' do
+    post = Post.create(author: @user, title: 'Nonsense', text: 'This guy should stop spitting bullshit')
+    post.save
+    visit user_path(@user)
+    click_link 'Read Post'
+    expect(page).to have_current_path(user_post_path(user_id: @user.id, id: post.id))
+  end
+  it 'When I click to see all posts, it redirects me to the user\'s post\'s index page' do
+    visit user_path(@user)
+    click_link 'See all post'
+    expect(page).to have_current_path(user_posts_path(@user))
+  end
 end
