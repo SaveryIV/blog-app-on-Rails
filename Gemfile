@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 ruby '3.2.2'
-gem 'mailcatcher'
 gem 'devise'
+gem 'mailcatcher'
 gem 'sass-rails'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
